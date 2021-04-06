@@ -128,3 +128,19 @@ lapis migrate
 ```
 
 Testar a aplicação novamente.
+
+## Desafio
+
+Criar um contêiner para rodar a aplicação https://github.com/hector-vido/python-ms.
+
+  - Esta aplicação está escrita em **python**
+  - Utilizar uma imagem de **alpine**
+  - Colocar os arquivos da aplicação em `/opt/app` com um "bind mount"
+  - Esta aplicação utiliza duas variáveis de ambiente
+    - `APP_HOST` - precisar ser `0.0.0.0`
+    - `APP_PORT` - fica a sua escolha
+  - Será preciso instalar o pacote `py3-pip`
+  - Rodar `pip3 install -r requirements.txt` para instalar dependências
+  - Iniciar a aplicação com `flask run` ou `python3 app.py`
+
+> **Importante:** Atenção aos diretórios
