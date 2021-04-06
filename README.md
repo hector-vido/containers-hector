@@ -1,4 +1,54 @@
-# Containers - Hector
+# Containers - Dia 2
+
+Os passos deverão ser feitos em https://labs.play-with-docker.com, para isso é preciso ter uma conta em https://hub.docker.com/.
+
+![Play With Docker](images/play-with-docker.png)
+
+  1. Criar uma única instância
+  2. Usar o terminal, esta distribuição é um [Linux Alpine](https://alpinelinux.org/)
+  3. Utilizar este endereço caso queira fazer SSH (não é necessário)
+  4. Utilizar este botão para expor uma porta da máquina/contêiner na internet
+
+> **Importante:** Se conhece pouco de Linux, instalar via terminal o editor **nano**: `apk add nano`
+
+## Docker
+
+### Essencial
+
+  1. Criar contêineres
+    - Hello World
+    - Apache
+  2. Listar contêineres
+    - Contêineres ativos
+    - Contêineres mortos
+    - O comando principal
+  3. Criar um contêiner desatachado
+    - Dar nomes aos contêineres
+  4. A rede interna do Docker
+    - `container inspect`
+  5. Entrar no contêiner e modificar arquivos
+    - Os parâmetros `--tty` e `--interactive` (de novo)
+  6. Variáveis de ambiente
+  7. Contêineres "puros"
+    - O comando principal (de novo)
+    - Os parâmetros `--tty` e `--interactive` (de novo)
+  8. Limpeza
+    - stop
+    - rm
+    - subshell
+
+### Portas
+
+  1. Explicação sobre portas, o que expor e o que não expor.
+  2. Fazer um NAT entre a **máquina hospedeira** e o contêiner para facilitar acessos e testes.
+
+### Volumes
+
+  1. Explicar os diferentes tipos de volumes
+    - NFS
+    - iSCSI
+    - Volumes na Cloud
+  2. Criar um **bind mount** para facilitar o teste de um site simples.
 
 ## Aplicação
 
@@ -11,6 +61,8 @@ docker container run -dti --name mysql -p 3306:3306 \
 -e MYSQL_PASSWORD=4linux \
 -e MYSQL_DATABASE=lua mariadb
 ```
+
+> **Importante:** A porta "exposta" facilitará os testes pela aplicação.
 
 ### Contêiner com Dependências
 
