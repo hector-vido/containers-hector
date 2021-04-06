@@ -77,7 +77,7 @@ docker container exec -ti lapis sh
 Entrar no contêiner e adicionar as dependências para o **OpenResty**:
 
 ```bash
-KEY='openresty.com-5ea678a6.rsa.pub'
+KEY='admin@openresty.com-5ea678a6.rsa.pub'
 wget "http://openresty.org/package/$KEY" -O "/etc/apk/keys/$KEY"
 echo "http://openresty.org/package/alpine/v3.12/main" >> /etc/apk/repositories
 apk update
