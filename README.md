@@ -22,17 +22,18 @@ Os passos deverão ser feitos em https://labs.play-with-docker.com, para isso é
     - Contêineres ativos
     - Contêineres mortos
     - O comando principal
-  3. Criar um contêiner desatachado
+  3. Images e Docker Hub
+  4. Criar um contêiner desatachado
     - Dar nomes aos contêineres
-  4. A rede interna do Docker
+  5. A rede interna do Docker
     - `container inspect`
-  5. Entrar no contêiner e modificar arquivos
+  6. Entrar no contêiner e modificar arquivos
     - Os parâmetros `--tty` e `--interactive` (de novo)
-  6. Variáveis de ambiente
-  7. Contêineres "puros"
+  7. Variáveis de ambiente
+  8. Contêineres "puros"
     - O comando principal (de novo)
     - Os parâmetros `--tty` e `--interactive` (de novo)
-  8. Limpeza
+  9. Limpeza
     - stop
     - rm
     - subshell
