@@ -67,9 +67,12 @@ docker container run -dti --name mysql -p 3306:3306 \
 
 ### Contêiner com Dependências
 
-Iniciar o contêiner base da aplicação:
+Clona a aplicação através do `git` e iniciar o contêiner base:
 
 ```bash
+cd
+git clone https://github.com/hector-vido/lua-ms.git
+cd lua-ms
 docker container run -dti -v $PWD:/opt/app -p 8080:8080 --name lapis alpine
 docker container exec -ti lapis sh
 ```
